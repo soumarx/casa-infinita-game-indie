@@ -1,5 +1,5 @@
+import decisoes
 import time
-import play
 
 
 def introducao():
@@ -32,7 +32,7 @@ def introducao():
     print("\nEntão pensei novamente...")
     time.sleep(3)
 
-    play.entrada_casa()
+    decisoes.entrada_casa()
 
 
 def quarto1():
@@ -72,7 +72,7 @@ def volta_casa():
     print("\nAo menos poderia parar de pensar que eu realmente poderia ganhar essa quantia em apenas alguns minutos")
     time.sleep(4)
 
-    play.decisao_casa()
+    decisoes.decisao_casa()
 
 
 def dormir():
@@ -88,8 +88,4 @@ def dormir():
     print("\nComo de costume...")
     time.sleep(5)
 
-    play.continuar()
-
-
-if __name__ == "__main__":
-    introducao()
+    decisoes.continuar()
