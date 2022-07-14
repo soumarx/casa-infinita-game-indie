@@ -52,6 +52,60 @@ def quarto1():
     print("\nEu ri e fui para a primeira porta")
     time.sleep(4)
 
+    quarto2()
+
+
+def quarto2():
+    time.sleep(3)
+    print("\nA segunda área era quase cômica")
+    time.sleep(3)
+    print("\nA decoração lembrava o corredor de Halloween")
+    time.sleep(3)
+    print("\nCheia de fantasmas de lençol e zumbis robóticos")
+    time.sleep(3)
+    print("\nNo outro lado tinha uma saída, a única porta além da qual eu entrei")
+    time.sleep(3)
+    print("\nBateu a curiosidade de olhar para trás...")
+
+    decisoes.olhar_atras()
+
+
+def quarto3(olhou):
+    time.sleep(3)
+    print("\nPassei através das falsas teias de aranha e fui para o terceiro quarto")
+    time.sleep(3)
+    print("\nFui recebido por uma névoa assim que abri a porta do terceiro quarto")
+    time.sleep(3)
+    print("\nNão havia apenas uma máquina de fumaça...")
+    time.sleep(3)
+    print("\nMas também morcegos pendurados pelo teto e girando em círculos. Assustador!")
+    if olhou == "True":
+        time.sleep(3)
+        print("\nLembrei que a porta tinha sumido no quarto anterior")
+        time.sleep(3)
+        print("\nMesmo que eu queira voltar agora, voltaria para o quarto 2 mas não conseguiria ir mais adiante")
+        time.sleep(3)
+        print("\nAo menos é o que o pessoal que cuida dessa casa queira que eu pense...")
+    time.sleep(3)
+    print("\nHavia uma trilha uma trilha sonora em loop de Halloween que qualquer um encontra em uma loja de R$1,99")
+    time.sleep(4)
+    print("\nEu vi que esse quarto era diferente pois tinha duas portas a frente")
+    time.sleep(3)
+    print("\nUma com a porta de madeira, com aspecto bem antigo")
+    time.sleep(3)
+    print("\nE uma porta de metal, não parecia aquelas porta de alumino mas sim metal puro")
+    time.sleep(3)
+
+    decisoes.escolher_porta()
+
+
+def porta_madeira():
+    time.sleep(3)
+
+
+def porta_metal():
+    time.sleep(3)
+
 
 def volta_casa():
     time.sleep(3)

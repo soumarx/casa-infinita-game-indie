@@ -38,40 +38,55 @@ def decisao_casa():
             print("Escolha uma ação!")
 
 
-def scene2():
-    print("")
-    time.sleep(2)
+def olhar_atras():
+    time.sleep(3)
+    print("\n(1) Olhar para a porta de trás (2) Seguir em frente")
     c1 = input()
     ans = 'incorrect'
-    pick = ''
+    olhou = ''
     while ans == 'incorrect':
-        if c1.upper() == "PICK":
-            print("")
-            time.sleep(2)
-            print("")
+        if c1.upper() == "1":
+            time.sleep(3)
+            print("\nPor incrível que pareça, a porta do qual eu vim, sumiu")
+            time.sleep(3)
+            print("\nPensei que poderia ter descido alguma cortina cobrindo a porta ou algo do tipo")
+            time.sleep(3)
+            print("\nMe mantive calmo, já que até agora, está tudo tão tranquilo")
+            time.sleep(3)
+            print("\nDecidir seguir mesmo com essa pulga atrás da orelha")
             ans = 'correct'
-            pick = "True"
-        elif c1.upper() == 'IGNORE':
-            print("")
+            olhou = "True"
+        elif c1.upper() == '2':
+            print("\nNem me incomodei em analisar tanto o quarto")
+            time.sleep(3)
+            print("\nEstá indo tudo bem, tudo parecendo apenas uma grande brincadeira de criança")
+            time.sleep(4)
             ans = 'correct'
-            pick = "False"
+            olhou = "False"
         else:
-            print("Wrong Input! Enter pick or ignore?")
+            print("Escolha uma ação! Olhar ou seguir em frete")
             c1 = input()
     time.sleep(2)
-    scene3(pick)
+    eventos.quarto3(olhou)
 
 
-def scene3(pick_value):
-    print("")
-    time.sleep(2)
-    if pick_value == "True":
-        time.sleep(2)
-        print("")
-        time.sleep(2)
-        print("")
-    elif pick_value == "False":
-        print("")
+def escolher_porta():
+    ans = 'incorrect'
+    while ans == 'incorrect':
+        print("\n(1) Escolher Porta de Madeira (2) Escolher Porta de Metal")
+        c1 = input()
+        if c1.upper() == "1":
+            time.sleep(3)
+            print("\nFui em direção a porta de madeira...")
+            ans = 'correct'
+            eventos.porta_madeira()
+        elif c1.upper() == "2":
+            time.sleep(3)
+            print("\nFui em direção a porta de metal...")
+            ans = 'correct'
+            eventos.porta_metal()
+        else:
+            print("Escolha uma ação!")
 
 
 def continuar():
